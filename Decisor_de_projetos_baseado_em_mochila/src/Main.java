@@ -152,7 +152,7 @@ public class Main {
                 List<Recurso> recursosSelecionados = resolverMochila(projeto.getRecursos(), projeto.getOrcamento());
                 System.out.println("Recursos selecionados para maximizar o valor agregado:");
                 for (Recurso recurso : recursosSelecionados) {
-                    System.out.println("Recurso ID: " + recurso.getId() + ", Nome: " + recurso.getNome() + ", Valor Agregado: " + recurso.getValorAgregado());
+                    System.out.println("Recurso ID: " + recurso.getId() + ", Nome: " + recurso.getNome() + ", Valor Agregado: " + recurso.getValorAgregado()+ ",  Custo:  "+ recurso.getCusto());
                 }
             } else {
                 System.out.println("Projeto não encontrado.");
